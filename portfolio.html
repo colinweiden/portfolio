@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Радима</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .personal-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .personal-info img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .info-text {
+            flex: 1;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        #age {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Портфолио</h1>
+        
+        <div class="section personal-info">
+            <img src="https://via.placeholder.com/150?text=Фото" alt="Фото Радима">
+            <div class="info-text">
+                <h2>Личная информация</h2>
+                <ul>
+                    <li><strong>Имя:</strong> Радим</li>
+                    <li><strong>Город:</strong> Уфа</li>
+                    <li><strong>Возраст:</strong> <span id="age">24</span></li>
+                    <li><strong>Email:</strong> grr-6@bk.ru</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Опыт работы</h2>
+            <ul>
+                <li>ИП Гайнетдинов Радим Рафисович (2022-2025) - Опыт работы только со складами</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Стек технологий</h2>
+            <ul>
+                <li>Языки программирования: Python</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Образование</h2>
+            <ul>
+                <li>УУНиТ (2019-2024) - Бакалавриат</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>Курсы повышения квалификации</h2>
+            <p>Информация отсутствует.</p>
+        </div>
+    </div>
+
+    <script>
+        // Простой JS для демонстрации: обновление возраста (хотя оно статично, но для примера)
+        document.addEventListener('DOMContentLoaded', function() {
+            const ageElement = document.getElementById('age');
+            // Здесь можно добавить логику, например, расчет возраста на основе даты рождения, но данных нет
+            console.log('Страница загружена. Возраст:', ageElement.textContent);
+        });
+    </script>
+</body>
+</html>
